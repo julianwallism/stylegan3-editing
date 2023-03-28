@@ -19,5 +19,5 @@ def make_dataset(dir: Path):
     for fname in dir.glob("*"):
         if is_image_file(fname):
             path = dir / fname
-            images.append(path)
+            images.append(fname)
     return images
